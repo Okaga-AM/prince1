@@ -24,6 +24,33 @@ body {
     font-size: 1.5em;
 }
 
+#nextText {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid pink;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    animation: pulse 2s infinite;
+    z-index: 4000;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 @font-face {
     font-family: 'myfont';
     src: url('Tomatoes-O8L8.ttf') format('truetype');
