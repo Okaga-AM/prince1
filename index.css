@@ -1,0 +1,81 @@
+#demo {
+    font-family: 'myfont';
+    white-space: pre;
+    font-size: 1.2em;
+}
+
+body {
+    background-image: url("backj.jpg");
+}
+
+
+@font-face {
+    font-family: 'myfont';
+    src: url('Tomatoes-O8L8.ttf') format('truetype');
+}
+
+/* This CSS centers the .circle div in the middle of the page */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    /* Use the full height of the viewport */
+}
+
+.circle {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+
+}
+
+
+
+
+#demo {
+    max-width: 300px;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: #000;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        background-color: #000;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+}
+
+
+
+.pink-string {
+    position: absolute;
+    top: 120px;
+    /* Adjust as needed */
+    left: 50%;
+    width: 4px;
+    height: 80px;
+    /* Adjust as needed */
+    background-color: pink;
+    transform: translateX(-50%);
+}
