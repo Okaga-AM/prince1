@@ -1,0 +1,65 @@
+body {
+    background-image: url('backdesk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'myfont';
+
+}
+
+.heart {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(177, 48, 151);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.tap {
+    font-family: sans-serif;
+    color: white;
+    font-size: larger;
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url('Tomatoes-O8L8.ttf') format('truetype');
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("backj.jpg");
+    }
+
+    .heart {
+        top: 50%;
+        left: 37%;
+    }
+}

@@ -13,3 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
     typeWriter();
   });
+
+
+  
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = new Audio("song.mp3");
+    audio.play();
+  });
