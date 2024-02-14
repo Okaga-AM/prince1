@@ -61,3 +61,26 @@ body {
         background-image: url("backj.jpg");
     }
 }
+
+
+#startButton {
+
+    width: 80px;
+    height: 80px;
+    background-color: rgb(177, 48, 151);
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border: none;
+    color: white;
+
+}
